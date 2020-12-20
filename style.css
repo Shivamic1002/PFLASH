@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
-    margin: 0%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -21,6 +22,7 @@ header h1 sub{
 }
 
 header {
+    text-align: center;
     padding: 40px;
     /* background-color: rgb(96, 40, 226); */
     background-image:url(giphy.gif);
@@ -45,6 +47,7 @@ main {
 }
 
 h2 {
+    text-align: center;
     padding: 20px;
 }
 
@@ -53,7 +56,7 @@ section:nth-child(even) {
 }
 
 section {
-    min-height: 100vh;
+    min-height: 50vh;
 }
 
 video {
@@ -61,7 +64,7 @@ video {
 }
 
 iframe {
-    height: 75vh;
+    height: 50vh;
 }
 
 img {
@@ -90,8 +93,8 @@ footer a {
 }
 
 main section login{
-    min-width: 50;
-    min-height: 50;
+    min-width: 100vh;
+    min-height: 20vh;
     background-color: rgb(171, 248, 184);
 
     position: absolute;
@@ -103,7 +106,7 @@ main section login{
 }
 
 main section signup{
-    min-width: 50vh;
+    min-width: 100vh;
     min-height: 30vh;
     background-color: rgb(128, 214, 240);
     
@@ -113,4 +116,12 @@ main section signup{
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+a:hover ,button:hover{
+    color: rgb(22, 19, 241);
+}
+
+textarea{
+    max-width: 40vh;
 }
